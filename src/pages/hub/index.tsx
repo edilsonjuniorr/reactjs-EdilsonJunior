@@ -1,9 +1,15 @@
 import React, { useState } from 'react'
 import * as S from '../styles'
+import { Button } from '../../components'
 
 const Hub = (): JSX.Element => {
   return (
-     <S.Background></S.Background>
+     <S.Background>
+       <Button
+        text="Personagens"
+        method={() => (window.location.pathname = '/characters')}
+        />
+     </S.Background>
   )
 }
 
