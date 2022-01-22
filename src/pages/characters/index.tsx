@@ -1,8 +1,10 @@
 import React, { useState } from 'react'
+import * as S from '../styles'
 
 const Characters = (): JSX.Element => {
   return (
-    <div></div>
+    <S.Background>
+    </S.Background>
   )
 }
 

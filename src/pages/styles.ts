@@ -1,6 +1,22 @@
 import styled from 'styled-components'
+import media from 'styled-media-query'
+import BackgroundImage from '../images/avengers2.jpg'
 
 export const Background = styled.div`
-    background: black;
     height: 100vh;
+    background-image: url(${BackgroundImage});
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+`
+export const LogoMarvel = styled.img`
+    position: relative;
+    padding-bottom: 10px;
+    height: 30%;
+
 `
