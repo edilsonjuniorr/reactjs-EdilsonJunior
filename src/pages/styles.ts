@@ -1,5 +1,4 @@
 import styled from 'styled-components'
-import media from 'styled-media-query'
 import BackgroundImage from '../images/avengers2.jpg'
 
 export const Background = styled.div`
@@ -14,7 +13,7 @@ export const Background = styled.div`
     justify-content: center;
     align-items: center;
 `
-export const LogoMarvel = styled.img`
+export const Logo = styled.img`
     position: relative;
     padding-bottom: 10px;
     height: 30%;

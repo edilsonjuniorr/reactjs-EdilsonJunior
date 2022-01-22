@@ -1,9 +1,9 @@
 import React from 'react'
 import { BrowserRouter as Router, Switch, Route } from 'react-router-dom'
 import {
-  Characters,
-  Comics,
-  Creators,
+  CharacterThor,
+  CharacterHulk,
+  CharacterIronMan,
   Hub
 } from '../pages'
 
@@ -12,9 +12,9 @@ const Routes: React.FC = () => (
     <React.StrictMode>
       <Switch>
         <Route exact path="/" component={Hub} />
-        <Route exact path="/characters" component={Characters} />
-        <Route exact path="/comics" component={Comics} />
-        <Route exact path="/creators" component={Creators} />
+        <Route exact path="/thordetails" component={CharacterThor} />
+        <Route exact path="/hulkdetails" component={CharacterHulk} />
+        <Route exact path="/ironmandetails" component={CharacterIronMan} />
       </Switch>
     </React.StrictMode>
   </Router>

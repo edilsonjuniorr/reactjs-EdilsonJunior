@@ -1,11 +1,11 @@
 import React, { useState } from 'react'
 import * as S from '../styles'
 
-const Creators = (): JSX.Element => {
+const CharacterIronMan = (): JSX.Element => {
   return (
     <div>
     </div>
   )
 }
 
-export default Creators
+export default CharacterIronMan

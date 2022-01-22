@@ -1,12 +1,12 @@
 import Hub from './hub'
-import Characters from './characters'
-import Comics from './comics'
-import Creators from './creators'
+import CharacterThor from './character_thor'
+import CharacterHulk from './character_hulk'
+import CharacterIronMan from './character_ironman'
 
 export {
   Hub,
-  Characters, 
-  Comics,
-  Creators,
+  CharacterThor, 
+  CharacterHulk,
+  CharacterIronMan,
 
 }

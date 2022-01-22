@@ -1,20 +1,29 @@
-import styled from 'styled-components'
+import styled, { css } from 'styled-components'
 
-export const Button = styled.button`
-    width: 20%;
-    border: none;
-    padding: 24px;
-    font-size: 1.4rem;
-    border-radius: 12px;
-    transition:
-    background-color 400ms ease,
-    color 400ms ease;
-    background-color: #e62429;
-    color: #FFF;
-    cursor: pointer;
-    margin: 10px;
+type ButtonProps = {
+  isSmall?: boolean
+}
 
-   &:hover {
+export const Button = styled.button<ButtonProps>`
+  margin: 10px;
+  background-color: #e62429;
+  color: #FFF;
+  border-radius: 12px;
+  border-color: #FFF;
+  cursor: pointer;
+  display: block;
+  font-size: 14px;
+  font-weight: 700;
+  height: 53px;
+  letter-spacing: 0.08em;
+  line-height: 21, 28px;
+  margin-bottom: 10px;
+  padding: ${({ isSmall }) => (isSmall ? '8px 16px' : '16px 32px')};
+  text-align: center;
+  min-width: 189px;
+  width: ${({ isSmall }) => (isSmall ? '157px' : '201px')};
+
+  &:hover {
     opacity: 0.8;
   }
 `

@@ -6,18 +6,18 @@ import logoMarvel from '../../images/marvel.png'
 const Hub = (): JSX.Element => {
   return (
       <S.Background>
-        <S.LogoMarvel src={logoMarvel} alt="logo da marvel"/>
+        <S.Logo src={logoMarvel} alt="logo da marvel"/>
         <Button
-          text="Personagens"
-          method={() => (window.location.pathname = '/characters')}
+          text="Thor"
+          method={() => (window.location.pathname = '/thordetails')}
           />
         <Button
-          text="Quadrinhos"
-          method={() => (window.location.pathname = '/comics')}
+          text="Hulk"
+          method={() => (window.location.pathname = '/hulkdetails')}
           />
         <Button
-          text="Criadores"
-          method={() => (window.location.pathname = '/creators')}
+          text="Iron Man"
+          method={() => (window.location.pathname = '/ironmandetails')}
           />
       </S.Background>
   )

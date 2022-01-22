@@ -1,11 +1,11 @@
 import React, { useState } from 'react'
 import * as S from '../styles'
 
-const Characters = (): JSX.Element => {
+const CharacterThor = (): JSX.Element => {
   return (
     <S.Background>
     </S.Background>
   )
 }
 
-export default Characters
+export default CharacterThor
